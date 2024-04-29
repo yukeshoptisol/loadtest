@@ -19,7 +19,7 @@ Install Dependency
 npm install
 ```
 
-### Generate token
+### Generate Payload
 
 ```
 node app.js `{payloadType}` `{No. of payload}` `{UserId}`
@@ -27,4 +27,17 @@ node app.js `{payloadType}` `{No. of payload}` `{UserId}`
 payloadType - createDocs
 No. of payload - No: of request want to generate
 UserId - Test userid from db
+```
+
+### Cleanup
+
+```
+node .\services\cleanup.js
+```
+
+### Sample ENV
+Create .env file
+```
+MONGO_URI=mongodb://127.0.0.1:27017/pih
+DB=pih
 ```
